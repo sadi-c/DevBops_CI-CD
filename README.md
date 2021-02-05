@@ -55,9 +55,16 @@
  <img src= "Imgs/build.png">
 
 <br>
+
 > According to Jenkins this option will "If Jenkins will receive PUSH GitHub hook from repo defined in Git SCM section it will trigger Git SCM polling logic. " 
 
 <br>
  <img src= "Imgs/webhook.png">
+
+<br>
+
+> 9. We are configuring the pipline to look for Jenkins file within our git repo, this Jenkins file will define all the stages necessary.
+<br>
+ <img src= "Imgs/pipedef.png">
 
 <br>
