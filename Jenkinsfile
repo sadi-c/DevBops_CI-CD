@@ -13,8 +13,8 @@ node {
             def customImage = docker.build("sadikac/blog-service:${env.BUILD_NUMBER}")
 
         /* Push the container to the custom Registry */
-        customImage.push()
-        customImage.push('latest')
+            customImage.push()
+            customImage.push('latest')
         
         }
     }
