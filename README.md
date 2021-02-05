@@ -17,4 +17,7 @@
 * CloudBees Docker Build and Publish plugin
 * SSH Agent
 
+> 3. My testing stage is depended on the boto3 SDK to access AWS services, in order for this test to pass I need to set up environmental variables so that my test can properly function. To do so go to go to Jenkins -> Manage Jenkins -> Configure System -> Global properties -> Environment variables
+ <br>
+ <img src= "Imgs/environmental.png">
 
