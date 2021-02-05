@@ -4,6 +4,6 @@ node {
     }
 
     stage ("build"){
-        sh 'python3 Test.py'
+        sh 'python3 test.py'
     }
     }
