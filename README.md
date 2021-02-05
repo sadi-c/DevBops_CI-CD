@@ -49,3 +49,15 @@
  <img src= "Imgs/pipeline.png">
 
 <br>
+
+> 8. Settign up build triggers and github webhook 
+<br>
+ <img src= "Imgs/build.png">
+
+<br>
+> According to Jenkins this option will "If Jenkins will receive PUSH GitHub hook from repo defined in Git SCM section it will trigger Git SCM polling logic. " 
+
+<br>
+ <img src= "Imgs/webhook.png">
+
+<br>
