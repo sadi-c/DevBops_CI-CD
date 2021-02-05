@@ -70,3 +70,23 @@
 <br>
 
 > 10. Define all the stages you want in your Jenkins file, my file contains 3 statges: git checkout, test, build docker image, push docker image to docker hub, lastly deploy docker images to private ec2
+
+## Troubleshooting: error - the python dependencies such as flask were not install casuing test to fail 
+<br>
+ <img src= "Imgs/error1.png">
+
+<br>
+## This was the pipline code prior to finding the solution 
+<br>
+ <img src= "Imgs/jen1.png">
+
+<br>
+## This change in the jenkins file allowed the test to pass 
+<br>
+ <img src= "Imgs/jen2.png">
+
+<br>
+<br>
+ <img src= "Imgs/success1.png">
+
+<br>
