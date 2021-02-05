@@ -42,3 +42,10 @@
 <br>
 
 > We will also upload the PEM file by clicking the option private key enter directly and adding it.
+<br>
+
+> 7. Now we will create our pipeline 
+<br>
+ <img src= "Imgs/pipeline.png">
+
+<br>
