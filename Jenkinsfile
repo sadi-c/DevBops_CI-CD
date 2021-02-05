@@ -9,7 +9,7 @@ node {
     }
 
     stage ("building docker image and pushing to dockerhub"){
-    docker.build("sadikac/blog-service:${env.BUILD_NUMBER}")
+    def customImage = docker.build("sadikac/blog-service:${env.BUILD_NUMBER}")
          
         
     }
