@@ -9,5 +9,12 @@
 * sudo systemctl enable docker
 * sudo usermod -a -G docker jenkins
 
+> 2. Access your Jenkins server from the web using the public IP at port 8080. From there install the follwing plugins for Jenkins server to do so go to manage Jenkins then manage plugins 
+* Docker Commons Plugin
+* Docker Pipeline
+* Docker plugin
+* docker-build-step
+* CloudBees Docker Build and Publish plugin
+* SSH Agent
 
 
