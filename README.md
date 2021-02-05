@@ -21,3 +21,11 @@
  <br>
  <img src= "Imgs/environmental.png">
 
+<br>
+ 
+> 4. This pipeline also builds and pushes images to the dockerhub. In order to push to dockerhub in a secure manner we will provide our dockerhub credientials as Jenkins creditentials
+
+ <br>
+ <img src= "Imgs/dockerhub.png">
+
+<br>
