@@ -21,5 +21,17 @@ node {
 
         }       
     }
+    stage  ("deploy to ec2"){
+    def docker_rm = 'docker rm -f devbops_blog'
+    def docker_run = 'docker run -p 8080:80 -d --name devbops_blog sadikac/blog-service'
+    
+
+       sshagent(credentials: ['SadikaPrivate']) {
+           sh "ssh -o StrictHostKeyChecking=no ec2-user@172.25.11.53 ${docker_rm}"
+           sh "ssh -o StrictHostKeyChecking=no ec2-user@172.25.11.53 ${docker_run}"
+    
+
+    }
+    }
     }
 
