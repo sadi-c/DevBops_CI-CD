@@ -9,13 +9,8 @@ node {
     }
 
     stage ("building docker image and pushing to dockerhub"){
-        docker.withRegistry('https://registry.hub.docker.com', 'sadikac'){
-            def customImage = docker.build("sadikac/blog-service:${env.BUILD_NUMBER}")
-
-        /* Push the container to the custom Registry */
-            customImage.push()
-            customImage.push('latest')
+    docker.build("sadikac/blog-service:${env.BUILD_NUMBER}")
+         
         
-        }
     }
     }
