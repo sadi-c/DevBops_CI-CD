@@ -1,5 +1,7 @@
 node {
-    checkout scm
+    stage ("git checkout"){ 
+        checkout scm
+    }
 
     stage ("build"){
         sh 'python3 Test.py'

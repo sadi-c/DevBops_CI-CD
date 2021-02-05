@@ -68,3 +68,5 @@
  <img src= "Imgs/pipedef.png">
 
 <br>
+
+> 10. Define all the stages you want in your Jenkins file, my file contains 3 statges: git checkout, test, build docker image, push docker image to docker hub, lastly deploy docker images to private ec2
