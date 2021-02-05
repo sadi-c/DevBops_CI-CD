@@ -16,7 +16,7 @@ node {
     }
 
     stage ("push to dockerhub"){
-    docker.withRegistry('https://registry.hub.docker.com', 'dockerhub_ID') {
+    docker.withRegistry('https://registry.hub.docker.com', 'sadikac') {
 
 
         /* Push the container to the custom Registry */
