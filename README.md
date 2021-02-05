@@ -31,3 +31,14 @@
 <br>
 
 > 5. Now we will create another EC2 instance in our private subnet so that it can ressemble our backend services. When setting up the EC2, you can use the commands from section 1 as a user data scripts that will install all the needed software and permission at boot time. It's also important to configure the security group of this ec2 to allow SSH access from our server in the public subnet using it's private IP address. 
+
+<br>
+
+> 6. Our Jenkins server uses the plugins ssh agent in order to push changes into our ec2 in the private subent. In order for this to happen we must provide credentials so that our Jenkins server can ssh into the respective server 
+
+<br>
+ <img src= "Imgs/private.png">
+
+<br>
+
+> We will also upload the PEM file by clicking the option private key enter directly and adding it.
