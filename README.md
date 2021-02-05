@@ -29,3 +29,5 @@
  <img src= "Imgs/dockerhub.png">
 
 <br>
+
+> 5. Now we will create another EC2 instance in our private subnet so that it can ressemble our backend services. When setting up the EC2, you can use the commands from section 1 as a user data scripts that will install all the needed software and permission at boot time. It's also important to configure the security group of this ec2 to allow SSH access from our server in the public subnet using it's private IP address. 
