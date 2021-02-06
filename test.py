@@ -128,7 +128,7 @@ class BasicTestCase(unittest.TestCase):
         req = {
             "Comment" : "comment"
         }
-        rv = self.app.post('/delete', json=req)
+        rv = self.app.post('/view', json=req)
         data = json.loads(rv.data)
         assert data['Result'] == true
 
