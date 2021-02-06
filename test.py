@@ -126,7 +126,7 @@ class BasicTestCase(unittest.TestCase):
 # ### New Test: Deleting comments ###
     def test_11_view(self):
         req = {
-            "UserName": "QATest"
+            "BlogDB" : "five"
         }
         rv = self.app.post('/view', json=req)
         data = json.loads(rv.data)
