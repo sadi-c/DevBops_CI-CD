@@ -71,7 +71,7 @@
 
 > 10. Define all the stages you want in your Jenkins file, my file contains 3 statges: git checkout, test, build docker image, push docker image to docker hub, lastly deploy docker images to private ec2
 
-## Troubleshooting: error - the python dependencies such as flask were not install casuing test to fail 
+## Troubleshooting: error - the python dependencies such as flask were not install causing test to fail 
 <br>
  <img src= "Imgs/error1.png">
 
