@@ -130,7 +130,7 @@ class BasicTestCase(unittest.TestCase):
         }
         rv = self.app.post('/view', json=req)
         data = json.loads(rv.data)
-        assert data['Result'] == true
+        assert data['Result'] == False
 
 
 if __name__ == '__main__':
