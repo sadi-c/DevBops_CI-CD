@@ -130,7 +130,7 @@ class BasicTestCase(unittest.TestCase):
         }
         rv = self.app.post('/comment', json=req)
         data = json.loads(rv.data)
-        assert data['Result'] == False
+        assert data['Result'] == True
 
     # Result should be false
     # def test_12_NONEXIST_deleting_comment(self):
