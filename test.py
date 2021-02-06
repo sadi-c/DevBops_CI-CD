@@ -126,6 +126,8 @@ class BasicTestCase(unittest.TestCase):
 # ### New Test: Deleting comments ###
     def test_11_deleting(self):
         req = {
+            "BlogName": "QATesting",
+            "UserName": "QA",
             "Comment": "comment"
         }
 
@@ -135,6 +137,8 @@ class BasicTestCase(unittest.TestCase):
 
     def test_12_NONEXIST_deleting(self):
         req = {
+            "BlogName": "QATesting",
+            "UserName": "QA",
             "Comment": "comment"
         }
 
