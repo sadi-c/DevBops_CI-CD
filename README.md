@@ -23,7 +23,7 @@
 
 <br>
  
-`4. This pipeline also builds and pushes images to the dockerhub. In order to push to dockerhub in a secure manner we will provide our dockerhub credientials as Jenkins creditentials`
+`4. This pipeline also builds and pushes images to the dockerhub. In order to push to dockerhub in a secure manner we will provide our dockerhub credentials as Jenkins credentials`
 
  <br>
  <img src= "Imgs/dockerhub.png">
@@ -56,7 +56,7 @@
 
 <br>
 
-`According to Jenkins, "If Jenkins will receive PUSH GitHub hook from repo defined in Git SCM section it will trigger Git SCM polling logic" 
+`According to Jenkins, "If Jenkins will receive PUSH GitHub hook from repo defined in Git SCM section it will trigger Git SCM polling logic' 
 
 <br>
  <img src= "Imgs/webhook.png">
@@ -76,11 +76,14 @@
  <img src= "Imgs/error1.png">
 
 <br>
+
 ### This was the pipeline code prior to finding the solution 
+
 <br>
  <img src= "Imgs/jen1.png">
 
 <br>
+
 ### This change in the jenkins file allowed the test to pass 
 <br>
  <img src= "Imgs/jen2.png">
