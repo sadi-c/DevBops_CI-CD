@@ -133,7 +133,7 @@ class BasicTestCase(unittest.TestCase):
 
         rv = self.app.post('/delete', json=req)
         data = json.loads(rv.data)
-        assert data['Result'] == True
+        assert data['Result'] == False
 
     def test_12_NONEXIST_deleting(self):
         req = {
