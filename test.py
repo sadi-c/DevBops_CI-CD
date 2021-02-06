@@ -127,7 +127,6 @@ class BasicTestCase(unittest.TestCase):
     def test_11_viewComment(self):
         req = {
             "Comment": "comment"
-            "BlogName": "SadiTesting",
             "UserName": "Sadi",
         }
 
