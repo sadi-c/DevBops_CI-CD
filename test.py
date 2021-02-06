@@ -123,7 +123,7 @@ class BasicTestCase(unittest.TestCase):
         assert data['Result'] == False
 
 
-# ### New Test: Deleting comments ###
+### Test: view comments ###
     def test_11_viewComment(self):
         req = {
             "Comment": "comment"
