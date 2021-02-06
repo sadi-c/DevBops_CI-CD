@@ -124,11 +124,11 @@ class BasicTestCase(unittest.TestCase):
 
 
 # ### New Test: Deleting comments ###
-    def test_11_view(self):
+    def test_11_add_commenting(self):
         req = {
-            "BlogDB" : "five"
+            "BlogName" : "QATesting"
         }
-        rv = self.app.post('/view', json=req)
+        rv = self.app.post('/comment', json=req)
         data = json.loads(rv.data)
         assert data['Result'] == True
 
