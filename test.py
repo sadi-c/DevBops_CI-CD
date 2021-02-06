@@ -126,7 +126,7 @@ class BasicTestCase(unittest.TestCase):
 # ### New Test: Deleting comments ###
     def test_11_Deleting_comments(self):
         req = {
-            "BlogName" : "QATesting"
+            "Comment" : "comment"
         }
         rv = self.app.post('/delete', json=req)
         data = json.loads(rv.data)
