@@ -124,7 +124,7 @@ class BasicTestCase(unittest.TestCase):
 
 
 ### New Test: Deleting comments ###
- def test_11_deleting_comment(self):
+    def test_11_deleting_comment(self):
         req = {
             "Comment": "comment"
         }
