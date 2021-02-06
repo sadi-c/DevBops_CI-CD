@@ -124,13 +124,14 @@ class BasicTestCase(unittest.TestCase):
 
 
 # ### New Test: Deleting comments ###
-    def test_11_Deleting_comments(self):
+    def test_11_viewComment(self):
         req = {
-            "Comment" : "comment"
+            "Comment": "comment"
         }
-        rv = self.app.post('/view', json=req)
+
+        rv = self.app.get('/view', json=req))
         data = json.loads(rv.data)
-        assert data['Result'] == False
+        assert data['Result'] == True
 
 
 if __name__ == '__main__':
