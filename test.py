@@ -129,7 +129,7 @@ class BasicTestCase(unittest.TestCase):
             "Comment": "comment"
         }
 
-        rv = self.app.get('/view', json=req))
+        rv = self.app.get('/view', json=req)
         data = json.loads(rv.data)
         assert data['Result'] == True
 
