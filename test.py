@@ -126,8 +126,8 @@ class BasicTestCase(unittest.TestCase):
 ### Test: view comments ###
     def test_11_viewComment(self):
         req = {
-            "Comment": "comment"
-            "UserName": "QATest",
+            "BlogName": "QATesting",
+            
         }
 
         rv = self.app.get('/view', json=req)
