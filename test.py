@@ -123,21 +123,21 @@ class BasicTestCase(unittest.TestCase):
         assert data['Result'] == False
 
 
-### New Test: Deleting comments ###
-    def test_11_deleting_comment(self):
-        req = {
-            "Comment": "comment"
-        }
-        rv = self.app.post('/delete', json=req)
-        data = json.loads(rv.data)
-        assert data['Result'] == True
+# ### New Test: Deleting comments ###
+#     def test_11_deleting_comment(self):
+#         req = {
+#             "Comment": "comment"
+#         }
+#         rv = self.app.post('/delete', json=req)
+#         data = json.loads(rv.data)
+#         assert data['Result'] == True
 
     # Result should be false
     # def test_12_NONEXIST_deleting_comment(self):
     #     req = {
     #         "Comment": "comment"
     #     }
-    #     rv = self.app.post('/comment', json=req)
+    #     rv = self.app.post('/delete', json=req)
     #     data = json.loads(rv.data)
     #     assert data['Result'] == False
 
